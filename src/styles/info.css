@@ -1,0 +1,114 @@
+
+.info__section{
+    padding: 1em;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 2em;
+}
+.info__title{
+    text-align: center;
+    font-family: 'Comic Neue', cursive;
+    font-weight: 900;
+    font-size: 3rem;
+    color: rgb(72, 212, 72);
+}
+.info__items{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 1em;
+    font-size: 1.5rem;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    
+}
+.info__items li{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  
+}
+.info__items span {
+  color: rgb(72, 212, 72);
+}
+.info__items b {
+  color: rgb(253, 255, 253);
+}
+ul{
+    list-style: none;
+    
+}
+.bn39span{
+  color: white;
+}
+
+.form{
+    display: flex;
+}
+
+  .inp39{
+   
+    border-radius: 6px 0 0 6px;
+    font-size: 1em;
+    font-weight: 600;
+    padding: 5px;
+
+    width: 12em;
+    text-align: center;
+    z-index: 2;
+    cursor: pointer;
+  }
+ 
+  @media (max-width:600px) {
+    .info__items{
+      
+        grid-template-columns: repeat(2, 1fr);
+        
+    }
+    .info__title{
+     
+      font-weight: 600;
+      font-size: 2rem;
+      }
+
+    .info__items{
+      font-size: 1rem;
+      text-align: center;
+
+      }
+    .app__input{
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      gap: 1em;
+    }
+
+  
+  }
+  @media (max-width:300px) {
+    .info__items{
+       
+        grid-template-columns: repeat(1,1fr);
+        
+    }
+    .info__title{
+     
+      font-weight: 600;
+      font-size: 2rem;
+      }
+
+    .info__items{
+      font-size: 1rem;
+      text-align: center;
+
+      }
+    .app__input{
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      gap: 1em;
+    }
+
+
+  }
